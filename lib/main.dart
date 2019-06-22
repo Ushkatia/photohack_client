@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future postImage(File image) async {
     var shakal =
-        img.copyResize(img.decodeImage(image.readAsBytesSync()), width: 120);
+    img.copyResize(img.decodeImage(image.readAsBytesSync()), width: 800);
 
     File file = new File(image.parent.path + "/shakal.jpg");
     if (file.existsSync()) {
